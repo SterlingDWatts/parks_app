@@ -1,1 +1,9 @@
-This is just a basic wireframe for starting new projects
+# Parks Search #
+
+## Features ##
+Search Parks by State
+
+## Technologies ##
+* HTML/CSS
+* Javascript/jQuery
+* NPS API/Fetch API

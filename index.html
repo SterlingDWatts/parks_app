@@ -3,8 +3,8 @@
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <meta name="description" content="HTML wireframe">
-    <title>HTML wireframe</title>
+    <meta name="description" content="Search for parks by state.">
+    <title>Parks Search</title>
     <link rel="stylesheet" type="text/css" href="reset.css">
     <link rel="stylesheet" type="text/css" href="style.css">
     <link href="https://fonts.googleapis.com/css?family=Roboto+Slab:700|Roboto:700&display=swap" rel="stylesheet">
@@ -12,30 +12,30 @@
     <script src="https://kit.fontawesome.com/baf761b7d4.js"></script>
 </head>
 <body>
-    <nav role="navigation">Nav</nav>
+    <nav role="navigation">Park Search</nav>
     <main role="main">
         <header role="banner">
-            <h1>Hero</h1>
+            <h1>Park Search</h1>
         </header>
 
-        <section>
-            Section 1
+        <section class="search">
+            <form action="submit" class="search-form">
+                <legend>Search parks by states</legend>
+                <label for="state-select">State(s)</label>
+                <input type="text" name="state-select" id="state-select" required placeholder="CA">
+                <br>
+                <label for="max-select"># of Results</label>
+                <input type="number" name="max-select" id="max-select" min="1" max="30" required value="10">
+                <br>
+                <button type="submit">Submit</button>
+            </form>
         </section>
 
-        <section>
-            Section 2
-        </section>
-
-        <section>
-            Section 3
-        </section>
-
-        <section>
-            Project 3
-        </section>
-        
-        <section>
-            Section 4
+        <section class="results hidden">
+            <h2>Search Results</h2>
+            <ul>
+                
+            </ul>
         </section>
     </main>
     <footer role="content-info">Footer</footer>

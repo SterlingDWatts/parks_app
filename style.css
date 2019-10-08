@@ -1,12 +1,5 @@
 html {
   box-sizing: border-box;
-}
-
-*, *::before, *::after {
-  box-sizing: inherit;
-}
-  
-body {
   font-family: "Roboto", sans-serif; 
   font-size: 16px;
   font-weight: 200;
@@ -14,10 +7,15 @@ body {
   text-align: center;
   line-height: 1.5;
 }
+
+*, *::before, *::after {
+  box-sizing: inherit;
+}
   
 nav, footer {
-  padding: 1% 0;
+  padding: 1em 0;
   background-color: #aaa;
+  line-height: 1;
 }
   
 nav {
@@ -30,6 +28,19 @@ nav {
   
 header {
   padding: 12% 0;
+  background-image: url(images/square_background.jpg);
+  background-size: cover;
+  background-position: center;
+  margin: 3em 0 0;
+}
+
+h1 {
+  color: rgba(0, 0, 0, 0);
+}
+
+h2 {
+  font-size: 40px;
+  padding: 6% 0;
 }
   
 section {
@@ -40,4 +51,30 @@ section {
   
 section:nth-child(even) {
   background-color: #ddd;
+}
+
+.results li {
+  border-bottom: solid black 1px;
+  padding: 1em;
+}
+
+.component {
+  margin: 1em;
+}
+
+p {
+  text-align: left;
+}
+
+.hidden {
+  display: none;
+}
+
+@media screen and (min-width: 650px) {
+
+  header {
+    background-image: url(images/park\ background.jpg);
+    padding: 6% 0;
+  }
+
 }
